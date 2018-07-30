@@ -1,1 +1,280 @@
-/* Los estilos de tu proyecto */
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	max-height: 100vh;
+	margin: 0;
+	font-family: 'Raleway', sans-serif !important;
+	font: 100%;
+	box-sizing: border-box;
+}
+
+header #navbar {
+	height: 120px;
+}
+
+header #navbar ul li {
+	margin-left: 30px;
+	font-size: 1.10em;
+}
+
+section #section-1 {
+	padding: 0;
+}
+
+#section-1 #img-section-1 {
+	background-image: url("../assets/images/taxi.jpg");
+	background-repeat: no-repeat;
+	background-position: center 92%;
+	background-size: cover;	
+	height: 700px;
+	display: flex;
+	justify-content: flex-end;
+	overflow: hidden;
+}
+
+#section-1 .register-box {
+	background-color: #f7b617;
+	height: auto;
+	align-self: center;
+	color: #fff;
+	padding: 40px;
+}
+
+#section-1 .register-box button {
+	border-style: none;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 10px 20px 10px 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#section-1 .register-box h3 {
+	margin: 30px 0 20px 0;
+}
+
+#section-1 .register-box h3 span {
+	margin-left: 10px;
+}
+
+#section-1 .register-box h3 span img {
+	margin-bottom: 5px;
+}
+
+#section-1 .register-box .lines {
+	display: flex;
+	flex-direction: row;
+}
+
+#section-1 .register-box .line-p {
+	width: 100%;
+	align-self: center;
+	text-align: center;
+	font-weight: bold;
+}	
+
+#section-1 .register-box .line {
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	margin: 30px;
+}
+
+section #section-2 {
+	background-color: #f7b617;
+	padding: 0;
+}
+
+#section-2 #phone {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	color: #fff;
+	height: auto;
+	margin: 40px 0 40px 0;
+	padding: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#section-2 #phone img {
+	margin-right: 30px;
+}
+
+#section-2 #phone .text-phone {
+	margin-left: 30px;
+}
+
+#section-2 #phone .text-phone p {
+	font-size: 1.3em;
+	margin-top: 25px;
+}
+
+section #section-3 {
+	padding: 0;
+}
+
+#section-3 #img-section-3 {
+	background-image: url("../assets/images/conduce.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;	
+	height: 450px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#section-3 .driver-box {
+	background-color: rgba(0,0,0,0.5);
+	opacity: 10;
+	height: 100%;
+	color: #fff;
+	padding: 40px;
+	display: flex;
+	align-items: center;
+}
+
+#section-3 .driver-box button {
+	border-style: none;
+	border-radius: 5px;
+	background-color: #f7b617;
+	padding: 10px 20px 10px 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+section #section-4 {
+	background-color: #f7b617;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 580px;
+}
+
+#section-4 form {
+	color: #fff;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#section-4 form .icon-input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;	
+}
+
+#section-4 form input {
+	border: 1px solid #fff;
+	border-radius: 5px;
+	padding: 20px 10px 20px 10px;
+	background-color: transparent;
+	margin: 10px 0 10px 20px;
+}
+
+#section-4 form input::placeholder {
+	color: #fff;	
+}
+
+#section-4 form button {
+	border-style: none;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 10px 20px 10px 20px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 20px;
+	align-self: flex-end;
+}
+
+#section-4 #map-box {	
+	border: 1px solid #fff;
+	padding: 10px;
+	margin: 40px;
+}
+
+#section-4 #map-box iframe {
+	width: 100%; 
+	height: 100%;
+}
+
+footer #footer {
+	background-color: #2b2b2b;
+	padding: 40px 0 40px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 0.90em; 
+	color: #fff;
+	height: 100%;
+}
+
+#footer .logo {
+	align-self: flex-start;
+}
+
+footer #footer .footer-menu {
+	background-color: #2b2b2b;
+	padding: 20px 0 20px 0;
+	margin: 20px 0 20px 0; 
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	height: auto;
+}
+
+#footer .footer-menu .social-media {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+}
+
+#footer .footer-menu .social-media li {
+	margin-right: 15px;
+	align-self: flex-end;
+	font-size: 1.10em;
+}
+
+#footer .footer-menu ul {
+	list-style: none;
+	line-height: 3em;
+	margin-bottom: 0;
+}
+
+#footer .footer-menu ul li {
+	cursor: pointer;
+}
+
+#footer .footer-menu ul li:hover {
+	color: #f7b617;
+}
+
+#footer .footer-menu .app-button {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 0;
+}
+
+#footer .footer-menu .app-button img {
+	margin: 5px 0 15px 0;
+	width: 75%;	
+}
+
+#footer .copyright {
+	align-self: flex-start;
+}
