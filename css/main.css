@@ -10,21 +10,24 @@ html {
 	box-sizing: inherit;
 }
 
-body {
+#body {
 	max-height: 100vh;
 	margin: 0;
-	font-family: 'Raleway', sans-serif !important;
+	font-family: 'Raleway', sans-serif;
 	font: 100%;
-	box-sizing: border-box;
+}
+
+.mobile {
+	display: none;
 }
 
 header #navbar {
-	height: 120px;
+	padding: 40px 50px 40px 50px;
 }
 
 header #navbar ul li {
 	margin-left: 30px;
-	font-size: 1.10em;
+	font-size: 1em;
 }
 
 section #section-1 {
@@ -63,17 +66,18 @@ section #section-1 {
 	margin: 30px 0 20px 0;
 }
 
-#section-1 .register-box h3 span {
+#section-1 .register-box span {
 	margin-left: 10px;
 }
 
-#section-1 .register-box h3 span img {
+#section-1 .register-box span img {
 	margin-bottom: 5px;
 }
 
 #section-1 .register-box .lines {
 	display: flex;
 	flex-direction: row;
+	margin: 15px 20px 0 20px;
 }
 
 #section-1 .register-box .line-p {
@@ -81,12 +85,13 @@ section #section-1 {
 	align-self: center;
 	text-align: center;
 	font-weight: bold;
+	margin: 0 15px 0 15px;
 }	
 
 #section-1 .register-box .line {
 	width: 100%;
 	border-bottom: 1px solid #fff;
-	margin: 30px;
+	margin: 15px 0 30px 0;
 }
 
 section #section-2 {
@@ -94,7 +99,7 @@ section #section-2 {
 	padding: 0;
 }
 
-#section-2 #phone {
+.phone {
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
 	border-right: 1px solid #fff;
@@ -108,15 +113,15 @@ section #section-2 {
 	align-items: center;
 }
 
-#section-2 #phone img {
-	margin-right: 30px;
+.phone img {
+	margin: 0 30px 0 30px;
 }
 
-#section-2 #phone .text-phone {
-	margin-left: 30px;
+.phone .text-phone {
+	margin: 0 30px 0 30px;
 }
 
-#section-2 #phone .text-phone p {
+.phone .text-phone p {
 	font-size: 1.3em;
 	margin-top: 25px;
 }
@@ -125,7 +130,7 @@ section #section-3 {
 	padding: 0;
 }
 
-#section-3 #img-section-3 {
+#img-section-3 {
 	background-image: url("../assets/images/conduce.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -135,7 +140,7 @@ section #section-3 {
 	justify-content: flex-end;
 }
 
-#section-3 .driver-box {
+.driver-box {
 	background-color: rgba(0,0,0,0.5);
 	opacity: 10;
 	height: 100%;
@@ -145,7 +150,11 @@ section #section-3 {
 	align-items: center;
 }
 
-#section-3 .driver-box button {
+.driver-box .text-driver {
+	margin: 0 20px 0 20px;
+}
+
+.driver-box button {
 	border-style: none;
 	border-radius: 5px;
 	background-color: #f7b617;
@@ -163,20 +172,20 @@ section #section-4 {
 	height: 580px;
 }
 
-#section-4 form {
+.route {
 	color: #fff;
 	align-self: center;
 	display: flex;
 	flex-direction: column;
 }
 
-#section-4 form .icon-input {
+.route .icon-input {
 	display: flex;
 	flex-direction: row;
 	align-items: center;	
 }
 
-#section-4 form input {
+.route input {
 	border: 1px solid #fff;
 	border-radius: 5px;
 	padding: 20px 10px 20px 10px;
@@ -184,11 +193,11 @@ section #section-4 {
 	margin: 10px 0 10px 20px;
 }
 
-#section-4 form input::placeholder {
+.route input::placeholder {
 	color: #fff;	
 }
 
-#section-4 form button {
+.route button {
 	border-style: none;
 	border-radius: 5px;
 	background-color: #fff;
@@ -199,15 +208,15 @@ section #section-4 {
 	align-self: flex-end;
 }
 
-#section-4 #map-box {	
+.map-box {	
 	border: 1px solid #fff;
 	padding: 10px;
-	margin: 40px;
+	margin: 40px 0 40px 0;
 }
 
-#section-4 #map-box iframe {
+.map-box iframe {
 	width: 100%; 
-	height: 100%;
+	height: 100%;	
 }
 
 footer #footer {
@@ -246,7 +255,7 @@ footer #footer .footer-menu {
 #footer .footer-menu .social-media li {
 	margin-right: 15px;
 	align-self: flex-end;
-	font-size: 1.10em;
+	font-size: 1em;
 }
 
 #footer .footer-menu ul {
@@ -277,4 +286,47 @@ footer #footer .footer-menu {
 
 #footer .copyright {
 	align-self: flex-start;
+}
+
+@media screen and (max-width: 576px) {
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.phone {
+		border: none;
+		margin: 15px 0 15px 0;
+		padding: 20px;
+	}
+
+	.phone .text-phone {
+		border: 1px solid #fff;
+		margin: 0;
+		padding: 20px;
+		text-align: center;
+	}
+
+	.phone .text-phone img {
+		margin: 20px 0 10px 0;
+		width: 75%;
+		height: auto;
+	}
+
+	section #section-4 {	
+		height: auto;
+		padding-top: 20px;
+	}
+
+	.route {
+		padding: 20px 40px 20px 40px;
+	}
+
+	.map-box {
+		height: 300px;
+		margin: 20px 0 20px 0;
+	}
 }
