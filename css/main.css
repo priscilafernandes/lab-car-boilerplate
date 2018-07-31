@@ -281,7 +281,8 @@ footer #footer .footer-menu {
 
 #footer .footer-menu .app-button img {
 	margin: 5px 0 15px 0;
-	width: 75%;	
+	width: 75%;
+
 }
 
 #footer .copyright {
@@ -328,5 +329,9 @@ footer #footer .footer-menu {
 	.map-box {
 		height: 300px;
 		margin: 20px 0 20px 0;
+	}
+
+	.media-mobile {
+		align-self: center;	
 	}
 }
