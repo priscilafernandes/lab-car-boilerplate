@@ -19,10 +19,42 @@
 			   	<ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100 justify-content-end">
 			      	<li class="nav-item"><a class="nav-link" href="#">Viaja<span class="sr-only">Viaja</span></a></li>
 						<li class="nav-item"><a class="nav-link" href="#">Conduce<span class="sr-only">Conduce</span></a></li>
-						<li class="nav-item active"><a class="nav-link" href="#">Inicia Sesión<span class="sr-only">Inicia Sesión</span></a></li>
+						<li class="nav-item active"><a class="nav-link" data-toggle="modal" data-target="#modal-session" href="#">Inicia Sesión<span class="sr-only">Inicia Sesión</span></a></li>
 			    	</ul>
 			  	</div>
 			</nav>
+
+			<div id="modal-session" class="modal fade" role="dialog">
+  				<div class="modal-dialog modal-dialog-centered">
+  					<div class="modal-content">
+      				<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal">&times;</button>
+      				</div>
+      				<div class="modal-body">
+        					<form class="px-4 py-3">
+    							<div class="form-group">
+      							<label for="exampleDropdownFormEmail1">Email address</label>
+      							<input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+      						</div>
+    							<div class="form-group">
+							      <label for="exampleDropdownFormPassword1">Password</label>
+							      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+    							</div>
+    							<div class="form-check">
+      							<input type="checkbox" class="form-check-input" id="dropdownCheck">
+      							<label class="form-check-label" for="dropdownCheck">Remember me</label>
+    							</div>
+    							<button type="submit" class="btn btn-primary">Sign in</button>
+  							</form>
+  						</div>
+      				<div class="modal-footer">
+      					<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Sign up</a>
+							<a class="dropdown-item" href="#">Forgot password? Click Here</a>
+      				</div>
+    				</div>
+  				</div>
+			</div>
 		</header>
 
 		<section class="row"> 
@@ -32,7 +64,7 @@
 	    				<form>
 		    				<h1>Disfruta del viaje<br>Eres dueño de tu tiempo</h1>
 		    				<h3>Viaja con<span><img src="assets/images/logoBlanco.png" alt="Logo LabCar" height="22"></span></h3>
-		    				<button>REGÍSTRATE</button>
+		    				<button data-toggle="modal" data-target="#modal-register">REGÍSTRATE</button>
 		    				<div class="lines">
 			    				<div class="line"></div>
 			    				<div class="line-p"><p>O bien</p></div>
@@ -49,6 +81,50 @@
 	    			</div>
 	    		</div>
 	  		</div>
+
+	  		<div id="modal-register" class="modal fade" role="dialog">
+  				<div class="modal-dialog modal-dialog-centered">
+  					<div class="modal-content">
+      				<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal">&times;</button>
+      				</div>
+      				<div class="modal-body">
+      					<button type="button" class="btn btn-primary btn-block">Ya tienes una cuenta?</button>
+        					<form class="px-4 py-3">
+    							<p>O crea una cuenta nueva:</p>
+    							<div class="form-group">
+	      						<div class="input-group">
+									  <input type="text" aria-label="Nombre" class="form-control" aria-describedby="inputGroup-sizing-sm" placeholder="Nombre">
+									  <input type="text" aria-label="Apelido" class="form-control" aria-describedby="inputGroup-sizing-sm" placeholder="Apelido">
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" id="exampleDropdownFormEmail1" aria-describedby="inputGroup-sizing-sm" placeholder="email@example.com">
+	      					</div>
+	      					<div class="form-group">
+								   <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
+    							</div>
+	      					<div class="form-group">	
+	      						<input type="text" class="form-control" aria-label="Teléfono" aria-describedby="inputGroup-sizing-sm" placeholder="Teléfono">
+								</div>
+								<div class="form-group">	
+	      						<input type="text" class="form-control" aria-label="Ciudad" aria-describedby="inputGroup-sizing-sm" placeholder="Ciudad">
+								</div>
+								<div class="form-group">	
+	      						<input type="text" class="form-control" aria-label="Invitación" aria-describedby="inputGroup-sizing-sm" placeholder="(Opcional) Código de invitación">
+								</div>
+								<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+						      	<option selected>Como te enteraste de nosotros?</option>
+						        	<option value="1">1</option>
+						        	<option value="2">2</option>
+						        	<option value="3">3</option>
+						      </select>
+						      <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+  							</form>
+  						</div>
+    				</div>
+  				</div>
+			</div>
 		</section>
 
 		<section class="row">
@@ -62,7 +138,7 @@
 					</div>
 				</div>				
 				<div class="col w-100 mobile">
-					<div class="col phone">					
+					<div class="col phone">		
 						<div class="col text-phone">
 							<h2>La nueva app</h2>
 							<img src="assets/images/iPhone6Plus.png" alt="Smartphone">
@@ -80,7 +156,7 @@
 	    				<div class="text-driver">	
 		    				<h2>Conduce cuando quieras</h2>
 		    				<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-		    				<a href="#"><button>Conviértete en un conductor</button></a>
+		    				<a href="#"><button data-toggle="modal" data-target="#modal-driver">Conviértete en un conductor</button></a>
 	    				</div>
 	    			</div>
 	    			<div class="mobile">
@@ -88,12 +164,67 @@
 		    				<div class="col text-driver">	
 			    				<h2>Conduce cuando quieras</h2>
 			    				<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-			    				<a href="#"><button>Conviértete en un conductor</button></a>
+			    				<a href="#"><button data-toggle="modal" data-target="#modal-driver">Conviértete en un conductor</button></a>
 		    				</div>
 		    			</div>
 		    		</div>	
 	    		</div>
 	  		</div>
+
+	  		<div id="modal-driver" class="modal fade" role="dialog">
+  				<div class="modal-dialog modal-dialog-centered">
+  					<div class="modal-content">
+      				<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal">&times;</button>
+      				</div>
+      				<div class="modal-body">
+      					<form class="px-4 py-3">
+								<div class="form-group">      						
+      							<label for="select-1">Tienes vehículo de 4 puertas?</label>
+	      						<select class="custom-select mr-sm-2" id="select-1">
+							      	<option selected>Selecione</option>
+							        	<option value="Si">Sí</option>
+							        	<option value="No">No</option>
+							      </select>
+						      </div>
+						      <div class="form-group">      						
+      							<label for="select-2">Marca</label>
+	      						<select class="custom-select mr-sm-2" id="select-2">
+							      	<option selected>Elige la marca del vehículo</option>
+							        	<option value="Marca1">Marca 1</option>
+							        	<option value="Marca2">Marca 2</option>
+							        	<option value="Marca3">Marca 3</option>
+							      </select>
+							      <p>No ves tu vehículo en la lista? Envia un correo electrónico a <a href="#">email@example.com</a></p>
+						      </div>
+						      <div class="form-group">      						
+      							<label for="select-3">Modelo</label>
+	      						<select class="custom-select mr-sm-2" id="select-3">
+							      	<option selected>Modelo</option>
+							        	<option value="Modelo1">Modelo 1</option>
+							        	<option value="Modelo2">Modelo 2</option>
+							        	<option value="Modelo3">Modelo 3</option>
+							      </select>
+							   </div>
+							   <div class="form-group">      						
+      							<label for="select-4">Año</label>
+	      						<select class="custom-select mr-sm-2" id="select-4">
+							      	<option selected>Año</option>
+							        	<option value="2016">2016</option>
+							        	<option value="2017">2017</option>
+							      </select>
+							   </div>
+    							<div class="form-group">
+									<label for="matricula">Número de la matrícula</label>
+									<input type="text" class="form-control" id="matricula" aria-describedby="inputGroup-sizing-sm" placeholder="Número de la matrícula">
+									<p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+	      					</div>							
+						      <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+  							</form>
+  						</div>
+    				</div>
+  				</div>
+			</div>
 		</section>
 
 		<section class="row"> 
